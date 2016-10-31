@@ -1,0 +1,18 @@
+Take the absolute value of each input.
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+b:
+    INBOX   
+    JUMPN    c
+    OUTBOX  
+    JUMP     a
+c:
+    COPYTO   1
+    SUB      1
+    SUB      1
+    OUTBOX  
+    JUMP     b
+
+
+

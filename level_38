@@ -1,0 +1,362 @@
+For each input n (0<n<1000) output the figures of that number.
+###SPEED###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    COPYFROM 9
+    COPYTO   6
+a:
+b:
+c:
+    INBOX   
+    COPYTO   8
+    SUB      10
+    JUMPN    v
+    COPYFROM 8
+    SUB      11
+    JUMPN    w
+    COPYTO   8
+    BUMPUP   9
+    COPYFROM 8
+    SUB      11
+    JUMPN    l
+    COPYTO   8
+    SUB      11
+    JUMPN    k
+    COPYTO   8
+    SUB      11
+    JUMPN    j
+    COPYTO   8
+    SUB      11
+    JUMPN    i
+    COPYTO   8
+    SUB      11
+    JUMPN    h
+    COPYTO   8
+    SUB      11
+    JUMPN    g
+    COPYTO   8
+    SUB      11
+    JUMPN    f
+    COPYTO   8
+    SUB      11
+    JUMPN    e
+    COPYTO   8
+    SUB      11
+    JUMPN    d
+    COPYTO   8
+    BUMPUP   9
+d:
+    BUMPUP   9
+e:
+    BUMPUP   9
+f:
+    BUMPUP   9
+g:
+    BUMPUP   9
+h:
+    BUMPUP   9
+i:
+    BUMPUP   9
+j:
+    BUMPUP   9
+k:
+    BUMPUP   9
+l:
+    COPYFROM 9
+    OUTBOX  
+    COPYFROM 8
+    SUB      10
+    JUMPN    u
+    COPYTO   8
+    SUB      10
+    JUMPN    t
+    COPYTO   8
+    SUB      10
+    JUMPN    s
+    COPYTO   8
+    SUB      10
+    JUMPN    r
+    COPYTO   8
+    SUB      10
+    JUMPN    q
+    COPYTO   8
+    SUB      10
+    JUMPN    p
+    COPYTO   8
+    SUB      10
+    JUMPN    o
+    COPYTO   8
+    SUB      10
+    JUMPN    n
+    COPYTO   8
+    SUB      10
+    JUMPN    m
+    COPYTO   8
+    BUMPUP   6
+m:
+    BUMPUP   6
+n:
+    BUMPUP   6
+o:
+    BUMPUP   6
+p:
+    BUMPUP   6
+q:
+    BUMPUP   6
+r:
+    BUMPUP   6
+s:
+    BUMPUP   6
+t:
+    BUMPUP   6
+u:
+    COPYFROM 6
+    OUTBOX  
+    COPYFROM 8
+    OUTBOX  
+    COPYFROM 9
+    SUB      9
+    COPYTO   9
+    COPYTO   6
+    JUMP     a
+v:
+    COPYFROM 8
+    OUTBOX  
+    JUMP     b
+w:
+    COPYFROM 8
+    SUB      10
+    JUMPN    af
+    COPYTO   8
+    SUB      10
+    JUMPN    ae
+    COPYTO   8
+    SUB      10
+    JUMPN    ad
+    COPYTO   8
+    SUB      10
+    JUMPN    ac
+    COPYTO   8
+    SUB      10
+    JUMPN    ab
+    COPYTO   8
+    SUB      10
+    JUMPN    aa
+    COPYTO   8
+    SUB      10
+    JUMPN    z
+    COPYTO   8
+    SUB      10
+    JUMPN    y
+    COPYTO   8
+    SUB      10
+    JUMPN    x
+    COPYTO   8
+    BUMPUP   9
+x:
+    BUMPUP   9
+y:
+    BUMPUP   9
+z:
+    BUMPUP   9
+aa:
+    BUMPUP   9
+ab:
+    BUMPUP   9
+ac:
+    BUMPUP   9
+ad:
+    BUMPUP   9
+ae:
+    BUMPUP   9
+af:
+    COPYFROM 9
+    OUTBOX  
+    COPYFROM 8
+    OUTBOX  
+    COPYFROM 6
+    COPYTO   9
+    JUMP     c
+
+
+###LINE COUNT###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    COPYFROM 9
+    COPYTO   6
+a:
+b:
+c:
+    INBOX   
+    COPYTO   8
+    SUB      10
+    JUMPN    v
+    COPYFROM 8
+    SUB      11
+    JUMPN    w
+    COPYTO   8
+    BUMPUP   9
+    COPYFROM 8
+    SUB      11
+    JUMPN    l
+    COPYTO   8
+    SUB      11
+    JUMPN    k
+    COPYTO   8
+    SUB      11
+    JUMPN    j
+    COPYTO   8
+    SUB      11
+    JUMPN    i
+    COPYTO   8
+    SUB      11
+    JUMPN    h
+    COPYTO   8
+    SUB      11
+    JUMPN    g
+    COPYTO   8
+    SUB      11
+    JUMPN    f
+    COPYTO   8
+    SUB      11
+    JUMPN    e
+    COPYTO   8
+    SUB      11
+    JUMPN    d
+    COPYTO   8
+    BUMPUP   9
+d:
+    BUMPUP   9
+e:
+    BUMPUP   9
+f:
+    BUMPUP   9
+g:
+    BUMPUP   9
+h:
+    BUMPUP   9
+i:
+    BUMPUP   9
+j:
+    BUMPUP   9
+k:
+    BUMPUP   9
+l:
+    COPYFROM 9
+    OUTBOX  
+    COPYFROM 8
+    SUB      10
+    JUMPN    u
+    COPYTO   8
+    SUB      10
+    JUMPN    t
+    COPYTO   8
+    SUB      10
+    JUMPN    s
+    COPYTO   8
+    SUB      10
+    JUMPN    r
+    COPYTO   8
+    SUB      10
+    JUMPN    q
+    COPYTO   8
+    SUB      10
+    JUMPN    p
+    COPYTO   8
+    SUB      10
+    JUMPN    o
+    COPYTO   8
+    SUB      10
+    JUMPN    n
+    COPYTO   8
+    SUB      10
+    JUMPN    m
+    COPYTO   8
+    BUMPUP   6
+m:
+    BUMPUP   6
+n:
+    BUMPUP   6
+o:
+    BUMPUP   6
+p:
+    BUMPUP   6
+q:
+    BUMPUP   6
+r:
+    BUMPUP   6
+s:
+    BUMPUP   6
+t:
+    BUMPUP   6
+u:
+    COPYFROM 6
+    OUTBOX  
+    COPYFROM 8
+    OUTBOX  
+    COPYFROM 9
+    SUB      9
+    COPYTO   9
+    COPYTO   6
+    JUMP     a
+v:
+    COPYFROM 8
+    OUTBOX  
+    JUMP     b
+w:
+    COPYFROM 8
+    SUB      10
+    JUMPN    af
+    COPYTO   8
+    SUB      10
+    JUMPN    ae
+    COPYTO   8
+    SUB      10
+    JUMPN    ad
+    COPYTO   8
+    SUB      10
+    JUMPN    ac
+    COPYTO   8
+    SUB      10
+    JUMPN    ab
+    COPYTO   8
+    SUB      10
+    JUMPN    aa
+    COPYTO   8
+    SUB      10
+    JUMPN    z
+    COPYTO   8
+    SUB      10
+    JUMPN    y
+    COPYTO   8
+    SUB      10
+    JUMPN    x
+    COPYTO   8
+    BUMPUP   9
+x:
+    BUMPUP   9
+y:
+    BUMPUP   9
+z:
+    BUMPUP   9
+aa:
+    BUMPUP   9
+ab:
+    BUMPUP   9
+ac:
+    BUMPUP   9
+ad:
+    BUMPUP   9
+ae:
+    BUMPUP   9
+af:
+    COPYFROM 9
+    OUTBOX  
+    COPYFROM 8
+    OUTBOX  
+    COPYFROM 6
+    COPYTO   9
+    JUMP     c
+
+
+

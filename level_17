@@ -1,0 +1,25 @@
+For each pair output 0 if their signs are equal, otherwise 1.
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+b:
+    INBOX   
+    JUMPN    c
+    INBOX   
+    JUMPN    d
+    JUMP     f
+c:
+    INBOX   
+    JUMPN    e
+d:
+    COPYFROM 5
+    OUTBOX  
+    JUMP     a
+e:
+f:
+    COPYFROM 4
+    OUTBOX  
+    JUMP     b
+
+
+

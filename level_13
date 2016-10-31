@@ -1,0 +1,24 @@
+For each pair of same elements output that element once.
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+b:
+    INBOX   
+    COPYTO   0
+    INBOX   
+    SUB      0
+    JUMPZ    c
+    INBOX   
+    COPYTO   0
+    INBOX   
+    SUB      0
+    JUMPZ    d
+    JUMP     b
+c:
+d:
+    COPYFROM 0
+    OUTBOX  
+    JUMP     a
+
+
+

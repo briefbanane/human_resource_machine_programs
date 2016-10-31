@@ -1,0 +1,140 @@
+For each input count the number of equal objects on the floor.
+###SPEED###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    JUMP     b
+a:
+    COPYFROM 18
+    OUTBOX  
+b:
+    COPYFROM 14
+    COPYTO   18
+    INBOX   
+    COPYTO   15
+    SUB      0
+    JUMPZ    c
+    JUMP     d
+c:
+    BUMPUP   18
+d:
+    COPYFROM 15
+    SUB      1
+    JUMPZ    e
+    JUMP     f
+e:
+    BUMPUP   18
+f:
+    COPYFROM 15
+    SUB      2
+    JUMPZ    g
+    JUMP     h
+g:
+    BUMPUP   18
+h:
+    COPYFROM 15
+    SUB      3
+    JUMPZ    i
+    JUMP     j
+i:
+    BUMPUP   18
+j:
+    COPYFROM 15
+    SUB      4
+    JUMPZ    k
+    JUMP     l
+k:
+    BUMPUP   18
+l:
+    COPYFROM 15
+    SUB      5
+    JUMPZ    m
+    JUMP     n
+m:
+    BUMPUP   18
+n:
+    COPYFROM 15
+    SUB      6
+    JUMPZ    o
+    JUMP     p
+o:
+    BUMPUP   18
+p:
+    COPYFROM 15
+    SUB      7
+    JUMPZ    q
+    JUMP     r
+q:
+    BUMPUP   18
+r:
+    COPYFROM 15
+    SUB      8
+    JUMPZ    s
+    JUMP     t
+s:
+    BUMPUP   18
+t:
+    COPYFROM 15
+    SUB      9
+    JUMPZ    u
+    JUMP     v
+u:
+    BUMPUP   18
+v:
+    COPYFROM 15
+    SUB      10
+    JUMPZ    w
+    JUMP     x
+w:
+    BUMPUP   18
+x:
+    COPYFROM 15
+    SUB      11
+    JUMPZ    y
+    JUMP     z
+y:
+    BUMPUP   18
+z:
+    COPYFROM 15
+    SUB      12
+    JUMPZ    aa
+    JUMP     ab
+aa:
+    BUMPUP   18
+ab:
+    COPYFROM 15
+    SUB      13
+    JUMPZ    ac
+    JUMP     ad
+ac:
+    BUMPUP   18
+ad:
+    JUMP     a
+
+
+###LINE COUNT###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    COPYFROM 14
+    COPYTO   19
+    COPYTO   18
+    INBOX   
+    COPYTO   15
+b:
+    COPYFROM [19]
+    JUMPZ    e
+    SUB      15
+    JUMPZ    c
+    JUMP     d
+c:
+    BUMPUP   18
+d:
+    BUMPUP   19
+    JUMP     b
+e:
+    COPYFROM 18
+    OUTBOX  
+    JUMP     a
+
+
+

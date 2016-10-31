@@ -1,0 +1,23 @@
+Copy everything except vocals.
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    JUMP     b
+a:
+    COPYFROM 7
+    OUTBOX  
+b:
+c:
+    COPYFROM 5
+    COPYTO   9
+    INBOX   
+    COPYTO   7
+d:
+    COPYFROM [9]
+    JUMPZ    a
+    SUB      7
+    JUMPZ    c
+    BUMPUP   9
+    JUMP     d
+
+
+

@@ -1,0 +1,82 @@
+Copy all unique inputs.
+###SPEED###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    BUMPUP   14
+    INBOX   
+    COPYTO   0
+    OUTBOX  
+a:
+b:
+c:
+d:
+e:
+    COPYFROM 14
+    COPYTO   13
+    JUMP     k
+f:
+g:
+h:
+i:
+j:
+    COPYFROM [14]
+    OUTBOX  
+    BUMPUP   14
+    COPYTO   13
+k:
+    INBOX   
+    COPYTO   [14]
+    SUB      0
+    JUMPZ    b
+    BUMPDN   13
+    JUMPZ    f
+    COPYFROM [14]
+    SUB      1
+    JUMPZ    d
+    BUMPDN   13
+    JUMPZ    g
+    COPYFROM [14]
+    SUB      2
+    JUMPZ    a
+    BUMPDN   13
+    JUMPZ    h
+    COPYFROM [14]
+    SUB      3
+    JUMPZ    c
+    BUMPDN   13
+    JUMPZ    j
+    COPYFROM [14]
+    SUB      4
+    JUMPZ    e
+    JUMP     i
+
+
+
+###LINE COUNT###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    JUMP     b
+a:
+    COPYFROM 12
+    COPYTO   [14]
+    OUTBOX  
+    BUMPUP   14
+    JUMP     d
+b:
+c:
+    COPYFROM 14
+d:
+    COPYTO   13
+    INBOX   
+    COPYTO   12
+e:
+    COPYFROM 13
+    JUMPZ    a
+    BUMPDN   13
+    COPYFROM [13]
+    SUB      12
+    JUMPZ    c
+    JUMP     e
+
+
+

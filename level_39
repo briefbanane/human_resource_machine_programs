@@ -1,0 +1,64 @@
+For each input n compute n/4 and n mod 4.
+###SPEED###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    INBOX   
+    COPYTO   11
+    SUB      15
+    JUMPN    d
+    COPYTO   11
+    SUB      15
+    JUMPN    c
+    COPYTO   11
+    SUB      15
+    JUMPN    b
+    COPYTO   11
+    BUMPUP   14
+b:
+    BUMPUP   14
+c:
+    BUMPUP   14
+d:
+    COPYFROM 11
+    OUTBOX  
+    COPYFROM 14
+    OUTBOX  
+    COPYFROM 14
+    SUB      14
+    COPYTO   14
+    JUMP     a
+
+
+###LINE COUNT###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    INBOX   
+    COPYTO   11
+    SUB      15
+    JUMPN    d
+    COPYTO   11
+    SUB      15
+    JUMPN    c
+    COPYTO   11
+    SUB      15
+    JUMPN    b
+    COPYTO   11
+    BUMPUP   14
+b:
+    BUMPUP   14
+c:
+    BUMPUP   14
+d:
+    COPYFROM 11
+    OUTBOX  
+    COPYFROM 14
+    OUTBOX  
+    COPYFROM 14
+    SUB      14
+    COPYTO   14
+    JUMP     a
+
+
+

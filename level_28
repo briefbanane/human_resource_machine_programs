@@ -1,0 +1,130 @@
+For each three inputs, sort them from smallest to biggest.
+###SPEED###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+b:
+c:
+d:
+e:
+f:
+    INBOX   
+    COPYTO   0
+    INBOX   
+    COPYTO   1
+    SUB      0
+    JUMPN    g
+    JUMP     k
+g:
+    INBOX   
+    COPYTO   2
+    SUB      1
+    JUMPN    h
+    JUMP     i
+h:
+    ADD      1
+    OUTBOX  
+    COPYFROM 1
+    OUTBOX  
+    COPYFROM 0
+    OUTBOX  
+    JUMP     f
+i:
+    ADD      1
+    SUB      0
+    JUMPN    j
+    COPYFROM 1
+    OUTBOX  
+    COPYFROM 0
+    OUTBOX  
+    COPYFROM 2
+    OUTBOX  
+    JUMP     a
+j:
+    COPYFROM 1
+    OUTBOX  
+    COPYFROM 2
+    OUTBOX  
+    COPYFROM 0
+    OUTBOX  
+    JUMP     e
+k:
+    INBOX   
+    COPYTO   2
+    SUB      0
+    JUMPN    m
+    ADD      0
+    SUB      1
+    JUMPN    l
+    COPYFROM 0
+    OUTBOX  
+    COPYFROM 1
+    OUTBOX  
+    COPYFROM 2
+    OUTBOX  
+    JUMP     b
+l:
+    COPYFROM 0
+    OUTBOX  
+    COPYFROM 2
+    OUTBOX  
+    COPYFROM 1
+    OUTBOX  
+    JUMP     d
+m:
+    ADD      0
+    OUTBOX  
+    COPYFROM 0
+    OUTBOX  
+    COPYFROM 1
+    OUTBOX  
+    JUMP     c
+
+
+
+###LINE COUNT###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    JUMP     d
+a:
+    ADD      1
+    OUTBOX  
+    COPYFROM 1
+    OUTBOX  
+b:
+    COPYFROM 0
+c:
+    OUTBOX  
+d:
+    INBOX   
+    COPYTO   0
+    COPYTO   3
+    INBOX   
+    COPYTO   1
+    SUB      0
+    JUMPN    e
+    ADD      0
+    COPYTO   0
+    COPYFROM 3
+    COPYTO   1
+e:
+    INBOX   
+    COPYTO   2
+    SUB      1
+    JUMPN    a
+    COPYFROM 1
+    OUTBOX  
+    COPYFROM 2
+    SUB      0
+    JUMPN    f
+    COPYFROM 0
+    OUTBOX  
+    COPYFROM 2
+    JUMP     c
+f:
+    ADD      0
+    OUTBOX  
+    JUMP     b
+
+
+

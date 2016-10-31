@@ -1,0 +1,24 @@
+For each pair calculate floor(first/second).
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    JUMP     b
+a:
+    COPYFROM 9
+    OUTBOX  
+b:
+    INBOX   
+    COPYTO   0
+    SUB      0
+    COPYTO   9
+    INBOX   
+    COPYTO   1
+c:
+    COPYFROM 0
+    SUB      1
+    JUMPN    a
+    COPYTO   0
+    BUMPUP   9
+    JUMP     c
+
+
+

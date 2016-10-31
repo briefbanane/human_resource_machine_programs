@@ -1,0 +1,98 @@
+Compute the prime factorization of each input.
+###SPEED###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    COPYFROM 24
+    COPYTO   0
+    BUMPUP   0
+    BUMPUP   0
+    COPYTO   1
+    BUMPUP   1
+    ADD      0
+    COPYTO   2
+    ADD      0
+    COPYTO   3
+    ADD      0
+    ADD      0
+    COPYTO   4
+    ADD      0
+    COPYTO   5
+    ADD      0
+    ADD      0
+    COPYTO   6
+    ADD      0
+    COPYTO   7
+    JUMP     d
+a:
+    BUMPUP   23
+    COPYFROM 24
+    COPYTO   17
+    JUMP     f
+b:
+    COPYFROM [23]
+    OUTBOX  
+    COPYFROM 17
+    COPYTO   20
+    BUMPDN   17
+    JUMPZ    c
+    JUMP     e
+c:
+d:
+    COPYFROM 24
+    COPYTO   17
+    COPYTO   23
+    INBOX   
+    COPYTO   20
+e:
+    COPYFROM 24
+    COPYTO   17
+    COPYTO   23
+f:
+    COPYFROM 20
+g:
+    SUB      [23]
+    COPYTO   21
+    BUMPUP   17
+    COPYFROM 21
+    JUMPZ    b
+    JUMPN    a
+    JUMP     g
+
+
+
+###LINE COUNT###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    COPYFROM 24
+    COPYTO   23
+    BUMPUP   23
+    INBOX   
+    COPYTO   20
+    JUMP     c
+b:
+    COPYFROM 23
+    OUTBOX  
+    COPYFROM 17
+    COPYTO   20
+    BUMPDN   17
+    JUMPZ    a
+    JUMP     e
+c:
+d:
+    BUMPUP   23
+e:
+    COPYFROM 24
+    COPYTO   17
+    COPYFROM 20
+f:
+    SUB      23
+    COPYTO   21
+    BUMPUP   17
+    COPYFROM 21
+    JUMPZ    b
+    JUMPN    d
+    JUMP     f
+
+
+

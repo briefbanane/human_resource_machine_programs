@@ -1,0 +1,27 @@
+For each input n output all fibonacci numbers up to the n-th one.
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    BUMPUP   9
+a:
+    INBOX   
+    COPYTO   0
+    COPYFROM 9
+    COPYTO   8
+    COPYTO   7
+    OUTBOX  
+b:
+    COPYFROM 0
+    SUB      8
+    JUMPN    a
+    COPYFROM 8
+    OUTBOX  
+    COPYFROM 8
+    COPYTO   6
+    ADD      7
+    COPYTO   8
+    COPYFROM 6
+    COPYTO   7
+    JUMP     b
+
+
+

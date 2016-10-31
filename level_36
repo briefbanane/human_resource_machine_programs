@@ -1,0 +1,124 @@
+Compare the two zero-terminated input strings and output the lexicographically smaller one.
+###SPEED###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    COPYFROM 23
+    COPYTO   21
+    COPYFROM 24
+    COPYTO   22
+a:
+    INBOX   
+    JUMPZ    b
+    COPYTO   [23]
+    BUMPUP   23
+    JUMP     a
+b:
+c:
+    INBOX   
+    JUMPZ    e
+    COPYTO   [24]
+    BUMPUP   24
+    JUMP     c
+d:
+    COPYFROM 20
+    OUTBOX  
+    BUMPUP   21
+    SUB      23
+    JUMPZ    k
+    BUMPUP   22
+    SUB      24
+    JUMPZ    l
+e:
+    COPYFROM [21]
+    COPYTO   20
+    COPYFROM [22]
+    SUB      20
+    JUMPZ    d
+    JUMPN    f
+    COPYFROM 20
+    OUTBOX  
+    BUMPUP   21
+    JUMP     g
+f:
+    JUMP     i
+g:
+h:
+    SUB      23
+    JUMPZ    m
+    COPYFROM [21]
+    OUTBOX  
+    BUMPUP   21
+    JUMP     h
+i:
+j:
+    COPYFROM [22]
+    OUTBOX  
+    BUMPUP   22
+    SUB      24
+    JUMPZ    n
+    JUMP     j
+k:
+l:
+m:
+n:
+
+
+
+###LINE COUNT###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    COPYFROM 23
+    COPYTO   21
+    COPYTO   18
+    COPYFROM 24
+    COPYTO   22
+    COPYTO   19
+a:
+    INBOX   
+    JUMPZ    b
+    COPYTO   [23]
+    BUMPUP   23
+    JUMP     a
+b:
+    COPYTO   [23]
+c:
+    INBOX   
+    JUMPZ    d
+    COPYTO   [24]
+    BUMPUP   24
+    JUMP     c
+d:
+    COPYTO   [24]
+    JUMP     f
+e:
+    BUMPUP   22
+    BUMPUP   21
+f:
+    COPYFROM [21]
+    JUMPZ    g
+    COPYTO   20
+    COPYFROM [22]
+    JUMPZ    j
+    SUB      20
+    JUMPZ    e
+    JUMPN    k
+g:
+h:
+    COPYFROM [18]
+    JUMPZ    l
+    OUTBOX  
+    BUMPUP   18
+    JUMP     h
+i:
+j:
+k:
+    COPYFROM [19]
+    JUMPZ    m
+    OUTBOX  
+    BUMPUP   19
+    JUMP     i
+l:
+m:
+
+
+

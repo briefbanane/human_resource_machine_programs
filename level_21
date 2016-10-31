@@ -1,0 +1,20 @@
+Sum each zero-terminated sequence of numbers.
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    JUMP     d
+a:
+    COPYFROM 5
+b:
+    OUTBOX  
+    INBOX   
+    JUMPZ    b
+c:
+    COPYTO   5
+d:
+    INBOX   
+    JUMPZ    a
+    ADD      5
+    JUMP     c
+
+
+

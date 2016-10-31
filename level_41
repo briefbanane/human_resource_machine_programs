@@ -1,0 +1,228 @@
+For each zero-terminated sequence order it from smallest to largest and output it.
+###SPEED###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    INBOX   
+    COPYTO   0
+    JUMPZ    k
+    INBOX   
+    COPYTO   1
+    JUMPZ    j
+    INBOX   
+    COPYTO   2
+    JUMPZ    i
+    INBOX   
+    COPYTO   3
+    JUMPZ    h
+    INBOX   
+    COPYTO   4
+    JUMPZ    g
+    INBOX   
+    COPYTO   5
+    JUMPZ    f
+    INBOX   
+    COPYTO   6
+    JUMPZ    e
+    INBOX   
+    COPYTO   7
+    JUMPZ    d
+    INBOX   
+    COPYTO   8
+    JUMPZ    c
+    INBOX   
+    COPYTO   9
+    JUMPZ    b
+    INBOX   
+    COPYTO   10
+b:
+c:
+d:
+e:
+f:
+g:
+h:
+i:
+j:
+k:
+    JUMP     v
+l:
+m:
+n:
+o:
+p:
+q:
+r:
+s:
+t:
+u:
+    COPYFROM 20
+    OUTBOX  
+v:
+    COPYFROM 0
+    JUMPZ    a
+    COPYTO   20
+    COPYFROM 1
+    COPYTO   0
+    JUMPZ    l
+    SUB      20
+    JUMPN    w
+    JUMP     x
+w:
+    COPYFROM 20
+    COPYTO   0
+    COPYFROM 1
+    COPYTO   20
+x:
+    COPYFROM 2
+    COPYTO   1
+    JUMPZ    m
+    SUB      20
+    JUMPN    y
+    JUMP     z
+y:
+    COPYFROM 20
+    COPYTO   1
+    COPYFROM 2
+    COPYTO   20
+z:
+    COPYFROM 3
+    COPYTO   2
+    JUMPZ    n
+    SUB      20
+    JUMPN    aa
+    JUMP     ab
+aa:
+    COPYFROM 20
+    COPYTO   2
+    COPYFROM 3
+    COPYTO   20
+ab:
+    COPYFROM 4
+    COPYTO   3
+    JUMPZ    o
+    SUB      20
+    JUMPN    ac
+    JUMP     ad
+ac:
+    COPYFROM 20
+    COPYTO   3
+    COPYFROM 4
+    COPYTO   20
+ad:
+    COPYFROM 5
+    COPYTO   4
+    JUMPZ    p
+    SUB      20
+    JUMPN    ae
+    JUMP     af
+ae:
+    COPYFROM 20
+    COPYTO   4
+    COPYFROM 5
+    COPYTO   20
+af:
+    COPYFROM 6
+    COPYTO   5
+    JUMPZ    q
+    SUB      20
+    JUMPN    ag
+    JUMP     ah
+ag:
+    COPYFROM 20
+    COPYTO   5
+    COPYFROM 6
+    COPYTO   20
+ah:
+    COPYFROM 7
+    COPYTO   6
+    JUMPZ    r
+    SUB      20
+    JUMPN    ai
+    JUMP     aj
+ai:
+    COPYFROM 20
+    COPYTO   6
+    COPYFROM 7
+    COPYTO   20
+aj:
+    COPYFROM 8
+    COPYTO   7
+    JUMPZ    s
+    SUB      20
+    JUMPN    ak
+    JUMP     al
+ak:
+    COPYFROM 20
+    COPYTO   7
+    COPYFROM 8
+    COPYTO   20
+al:
+    COPYFROM 9
+    COPYTO   8
+    JUMPZ    t
+    SUB      20
+    JUMPN    am
+    JUMP     an
+am:
+    COPYFROM 20
+    COPYTO   8
+    COPYFROM 9
+    COPYTO   20
+an:
+    COPYFROM 10
+    COPYTO   9
+    JUMPZ    u
+
+
+
+###LINE COUNT###
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    COPYFROM 24
+    COPYTO   20
+b:
+    INBOX   
+    COPYTO   [20]
+    JUMPZ    c
+    BUMPUP   20
+    JUMP     b
+c:
+d:
+    COPYFROM 24
+    COPYTO   23
+    BUMPDN   23
+e:
+    BUMPUP   23
+    SUB      20
+    JUMPZ    a
+    COPYFROM [23]
+    JUMPZ    e
+    JUMP     i
+f:
+g:
+h:
+    BUMPUP   23
+    SUB      20
+    JUMPZ    j
+    COPYFROM [23]
+    JUMPZ    g
+    COPYFROM 22
+    SUB      [23]
+    JUMPN    f
+    COPYFROM [23]
+i:
+    COPYTO   22
+    COPYFROM 23
+    COPYTO   21
+    JUMP     h
+j:
+    COPYFROM [21]
+    OUTBOX  
+    COPYFROM 24
+    COPYTO   [21]
+    JUMP     d
+
+
+

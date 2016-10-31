@@ -1,0 +1,16 @@
+On the floor are data-adress pairs the input contains adresses. For each pair on the floor output the data and follow the adress until you reach a negative adress value.
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    INBOX   
+b:
+    COPYTO   2
+    COPYFROM [2]
+    OUTBOX  
+    BUMPUP   2
+    COPYFROM [2]
+    JUMPN    a
+    JUMP     b
+
+
+
